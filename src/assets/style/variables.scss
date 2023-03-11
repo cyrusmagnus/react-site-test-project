@@ -4,3 +4,11 @@ $font-main: 'Raleway', sans-serif;
 $color-accent: #4BA87D;
 $color-main: #000000;
 $color-bg: #FFFFFF;
+
+@mixin hover{
+  @media (any-hover: hover){
+    &:hover{
+      @content
+    }
+  }
+}

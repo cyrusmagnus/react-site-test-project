@@ -12,10 +12,10 @@
   color: $color-bg;
   background-color: $color-accent;
   text-transform: uppercase;
-  z-index: 30;
-  &:hover{
-    color: $color-bg;
-    background-color: $color-accent;
+  transition: background-color .2s, color .2s;
+  @include hover{
+    color: $color-accent;
+    background-color: $color-bg;
   }
 
   &__invert{
@@ -32,4 +32,8 @@
     color: $color-accent;
     border: 3px solid $color-accent;
   }
+}
+.hover{
+  color: $color-accent;
+  background-color: $color-bg;
 }
