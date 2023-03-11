@@ -1,0 +1,35 @@
+@import './../../assets/style/App.scss';
+
+.button{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: $font-main;
+  font-weight: 800;
+  line-height: 1.18;
+  letter-spacing: 1.275px;
+  font-size: 16px;
+  color: $color-bg;
+  background-color: $color-accent;
+  text-transform: uppercase;
+  z-index: 30;
+  &:hover{
+    color: $color-bg;
+    background-color: $color-accent;
+  }
+
+  &__invert{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: $font-main;
+    font-weight: 800;
+    line-height: 1.18;
+    letter-spacing: 1.275px;
+    font-size: 16px;
+    text-transform: uppercase;
+    background-color: transparent;
+    color: $color-accent;
+    border: 3px solid $color-accent;
+  }
+}

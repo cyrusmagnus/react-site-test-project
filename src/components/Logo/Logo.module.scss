@@ -1,0 +1,18 @@
+@import './../../assets/style/App.scss';
+
+.logo{
+  display: inline-flex;
+  align-items: center;
+  gap: 14px;
+
+  &__icon{
+    fill: $color-accent;
+  }
+  &__title{
+    font-family: $font-main;
+    font-weight: 900;
+    font-size: 34px;
+    line-height: 1.16;
+    color: $color-main;
+  }
+}

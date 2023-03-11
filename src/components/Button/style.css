@@ -1,0 +1,16 @@
+.button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 800;
+    line-height: 1.18;
+    /*letter-spacing: 1.275px;*/
+    font-size: 16px;
+    color: black;
+    background-color: white;
+    text-transform: uppercase;
+}
+.button:hover{
+     color: white;
+     background-color: black;
+ }

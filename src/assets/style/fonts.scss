@@ -1,0 +1,36 @@
+/* Шаблон */
+ @font-face {
+   font-family: 'Raleway';
+   src: url('../fonts/Raleway-Medium.woff') format('woff'), url('../fonts/Raleway-Medium.woff2') format('woff2');
+   font-weight: 500;
+   font-style: normal;
+   font-stretch: normal;
+ }
+@font-face {
+  font-family: 'Raleway';
+  src: url('../fonts/Raleway-Bold.woff') format('woff'), url('../fonts/Raleway-Bold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+  font-stretch: normal;
+}
+@font-face {
+  font-family: 'Raleway';
+  src: url('../fonts/Raleway-ExtraBold.woff') format('woff'), url('../fonts/Raleway-ExtraBold.woff2') format('woff2');
+  font-weight: 800;
+  font-style: normal;
+  font-stretch: normal;
+}
+@font-face {
+  font-family: 'Raleway';
+  src: url('../fonts/Raleway-Black.woff') format('woff'), url('../fonts/Raleway-Black.woff2') format('woff2');
+  font-weight: 900;
+  font-style: normal;
+  font-stretch: normal;
+}
+@font-face {
+  font-family: 'Playfair Display';
+  src: url('../fonts/PlayfairDisplay-Black.woff') format('woff'), url('../fonts/PlayfairDisplay-Black.woff2') format('woff2');
+  font-weight: 900;
+  font-style: normal;
+  font-stretch: normal;
+}
