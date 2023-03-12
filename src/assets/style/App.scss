@@ -9,10 +9,25 @@ body{
 }
 .App{
   height: 100vh;
+  background-color: $color-bg;
+  font-family: $font-main;
   width: 100%;
   max-width: 1268px;
   margin: 0 auto;
   padding: 0 14px;
-  background-color: $color-bg;
+  position: relative;
+}
+.header-1{
   font-family: $font-main;
+  font-weight: 800;
+  font-size: 60px;
+  line-height: 1.2;
+  color: $color-main;
+}
+.text{
+  font-family: $font-main;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.37;
+  color: $color-main;
 }

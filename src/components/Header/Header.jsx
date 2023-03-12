@@ -24,7 +24,7 @@ const Header = () => {
         <header className={styles.header} ref={node}>
             <div className={styles.header__icon}>
                 <HamburgerButton/>
-                <Logo title={'Компания'}/>
+                <Logo title={'Цирк'}/>
             </div>
             <div className={styles.header__navigation}>
                 <Nav/>

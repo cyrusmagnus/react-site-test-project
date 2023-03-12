@@ -6,16 +6,9 @@ const Button = (props) => {
     return (
         <button
             className={variant !== 'invert' ? styles.button : styles.button__invert}
-            // onMouseEnter={(event) => {
-            //     return event.target.classList.add(`${styles.hover}`);
-            // }}
-            // onMouseLeave={(event) => {
-            //     return event.target.classList.remove(`${styles.hover}`);
-            // }}
             style={
                 {padding: `${paddingVertical}px ${paddingSide}px`}
             }
-            // className={styles.button}
         >
             {title}
         </button>
