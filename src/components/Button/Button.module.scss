@@ -11,11 +11,18 @@
   font-size: 16px;
   color: $color-bg;
   background-color: $color-accent;
+  border: 1px solid rgba($color-accent, 0);
   text-transform: uppercase;
-  transition: background-color .2s, color .2s;
+  transition: background-color .2s, color .2s, border .2s;
+  &:focus{
+    color: $color-accent;
+    background-color: $color-bg;
+    border: 1px solid rgba($color-accent, 1);
+  }
   @include hover{
     color: $color-accent;
     background-color: $color-bg;
+    border: 1px solid rgba($color-accent, 1);
   }
 
   &__invert{

@@ -1,14 +1,14 @@
-@mixin large{
+@mixin desktop{
   @media only screen and (max-width: 1360px){
     @content
   }
 }
-@mixin medium{
+@mixin laptop{
   @media only screen and (max-width: 1199px){
     @content
   }
 }
-@mixin small{
+@mixin tablet{
   @media only screen and (max-width: 991px){
     @content
   }

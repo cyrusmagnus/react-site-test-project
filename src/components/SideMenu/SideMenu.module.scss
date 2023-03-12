@@ -1,0 +1,115 @@
+@import './../../assets/style/App.scss';
+
+$timing-function   : cubic-bezier(0.190, 1.000, 0.220, 1.000);
+
+
+.nav{
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  transform: translate(-100%);
+  opacity: 0;
+  z-index: 1;
+  display: block;
+  padding: 100px 10px 0 68px;
+  width: 400px;
+  max-width: 100%;
+  background-color: $color-bg;
+  border-right: 4px solid $color-accent;
+  transition: opacity .2s, transform .5s;
+  &__list{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 6px;
+    max-width: 100%;
+  }
+  &__item{
+    width: 100%;
+    text-align: center;
+  }
+  &__link{
+    display: inline-block;
+    padding: 8px;
+    width: 100%;
+    font-family: $font-main;
+    font-weight: 800;
+    color: $color-bg;
+    background-color: $color-accent;
+    font-size: 16px;
+    text-transform: uppercase;
+    border: 1px solid rgba($color-accent, 0);
+    transition: color .2s, border .2s, background-color .2s;
+
+    @include hover{
+      color: $color-accent;
+      background-color:$color-bg;
+      border: 1px solid rgba($color-accent, 1);
+    }
+  }
+  &__linkActive{
+    display: inline-block;
+    padding: 8px;
+    width: 100%;
+    font-family: $font-main;
+    font-weight: 800;
+    color: $color-accent;
+    background-color:$color-bg;
+    font-size: 16px;
+    text-transform: uppercase;
+    border: 1px solid rgba($color-accent, 1);
+    transition: color .2s, border .2s, background-color .2s;
+  }
+}
+.nav__active{
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  transform: translate(0);
+  opacity: 1; z-index: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding: 100px 10px 0 68px;
+  width: 400px;
+  max-width: 100%;
+  background-color: $color-bg;
+  border-right: 4px solid $color-accent;
+  transition: opacity .2s, transform .5s;
+  &__link {
+    display: inline-block;
+    padding: 8px;
+    width: 100%;
+    font-family: $font-main;
+    font-weight: 800;
+    color: $color-bg;
+    background-color: $color-accent;
+    font-size: 16px;
+    text-transform: uppercase;
+    border: 1px solid rgba($color-accent, 0);
+    transition: color .2s, border .2s, background-color .2s;
+    @include hover {
+      color: $color-accent;
+      background-color: $color-bg;
+      border: 1px solid rgba($color-accent, 1);
+    }
+  }
+}
+
+@include min(991px){
+  .nav,
+  .nav__active{
+    display: none;
+  }
+}
+@include xs{
+  .nav,
+  .nav__active{
+    border-right: none;
+    padding: 100px 20px 0 68px;
+  }
+}

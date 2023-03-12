@@ -13,7 +13,7 @@ const Button = (props) => {
             //     return event.target.classList.remove(`${styles.hover}`);
             // }}
             style={
-                {padding: `${paddingSide}px ${paddingVertical}px`}
+                {padding: `${paddingVertical}px ${paddingSide}px`}
             }
             // className={styles.button}
         >
